@@ -358,7 +358,6 @@ They are documented here rather than silently omitted.
 | :----------------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [`2_inheritance.py`](2_inheritance.py)     | `ValueError: expected a nonnegative input` on sides `1 2 10`  | Heron's formula is applied without first checking the triangle inequality, so `s(s−a)(s−b)(s−c)` goes negative and `math.sqrt` rejects it. Valid triangles are unaffected. |
 | [`2_inheritance.py`](2_inheritance.py), [`6a_linear_search.py`](6a_linear_search.py), [`6b_binary_search.py`](6b_binary_search.py) | Unhandled `ValueError` on non-numeric input | `int(input(...))` and `float(input(...))` are called without a `try`/`except`, so any non-numeric entry propagates a traceback instead of re-prompting. |
-| [`5_n_object_comb.py`](5_n_object_comb.py) | Header comment reads `File: combinations_demo.py`             | Stale comment left over from an earlier filename; cosmetic only, with no effect on behaviour.                                                                             |
 
 Fixes for any of these are welcome.
 

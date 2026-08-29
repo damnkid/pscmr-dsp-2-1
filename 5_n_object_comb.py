@@ -1,5 +1,4 @@
 # Program: Generate Combinations of n Distinct Objects
-# File: combinations_demo.py
 from itertools import combinations
 
 # Step 1: Define the original list
